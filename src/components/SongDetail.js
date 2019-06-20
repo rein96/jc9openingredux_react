@@ -7,6 +7,7 @@ class SongDetail extends React.Component {
         return(
             <div>
                 <div>
+                    {console.log(object)}
                     <h4>Title    : {object.title}</h4>
                     <h4>Duration : {object.duration}</h4>
                 </div>

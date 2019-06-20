@@ -20,8 +20,8 @@ class SongList extends React.Component {
                     </div>
     
                     <div className="col-sm">
-                        <button className="btn btn-success m-1" onClick={() => this.props.selectSong(el)}>Select Song </button>
-                        <button className="btn btn-success" onClick={ () => this.props.selectArtist(el) }> Select Artist</button>
+                        <button className="btn btn-success m-1" onClick={() => {this.props.selectSong(el)} }>Select Song </button>
+                        <button className="btn btn-success" onClick={ () => {this.props.selectArtist(el)} }> Select Artist</button>
                     </div>
                 </div>
             )

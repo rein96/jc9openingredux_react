@@ -7,7 +7,7 @@ class ArtistDetail extends React.Component {
         return(
             <div>
                 <h4>Artist   : {object.artist}</h4>
-                <h4>Personnel: {object.personnel}</h4>
+                <h4>Personnel: {object.personnel.join(', ')}</h4>
             </div>
         )
     }
@@ -17,7 +17,7 @@ class ArtistDetail extends React.Component {
             <div className="card">
                 <div className="card-body">
                     <h1>ArtistDetail Component</h1>
-                    {this.renderArtistDetail(this.props.STATESELECTEDARTIST)}
+                    { this.props.STATESELECTEDARTIST === '' ? <h3>Artist is not selected</h3> : this.renderArtistDetail(this.props.STATESELECTEDARTIST) }
                 </div>
             </div>
         )
